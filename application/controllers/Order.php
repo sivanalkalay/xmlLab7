@@ -2,9 +2,9 @@
 
 /**
  * Order handler
- * 
+ *
  * Implement the different order handling usecases.
- * 
+ *
  * controllers/welcome.php
  *
  * ------------------------------------------------------------------------
@@ -17,14 +17,14 @@ class Order extends Application {
 
     // start a new order
     function neworder() {
-        $order_num = $this->orders->highest() + 1;
-        
-        $neworder = $this->orders->create();
+        $order_num = $this->Orders->highest() + 1;
+
+        $neworder = $this->Orders->create();
         $neworder->num = $order_num;
         $neworder->date = date();
         $neworder->status = 'a';
         $neworder->total = 0;
-        $this->orders->add($neworder);
+        $this->Orders->add($neworder);
 
         redirect('/order/display_menu/' . $order_num);
     }
@@ -37,6 +37,7 @@ class Order extends Application {
         $this->data['pagebody'] = 'show_menu';
         $this->data['order_num'] = $order_num;
         //FIXME
+        $this->data['title'] = 'Order #' . $order_num . ' (' . number_format($this->Orders->total($order_num), 2) . ')';
 
         // Make the columns
         $this->data['meals'] = $this->make_column('m');
@@ -48,17 +49,17 @@ class Order extends Application {
 	// child loop - used for the columns in the menu display.
 	// this feature, formerly in CI2.2, was removed in CI3 because
 	// it presented a security vulnerability.
-	// 
+	//
 	// This means that we cannot reference order_num inside of any of the
 	// variable pair loops in our view, but must instead make sure
-	// that any such substitutions we wish make are injected into the 
+	// that any such substitutions we wish make are injected into the
 	// variable parameters
 	// Merge this fix into your origin/master for the lab!
 	$this->hokeyfix($this->data['meals'],$order_num);
 	$this->hokeyfix($this->data['drinks'],$order_num);
 	$this->hokeyfix($this->data['sweets'],$order_num);
 	// end of hokey patch
-	
+
         $this->render();
     }
 
@@ -67,11 +68,10 @@ class Order extends Application {
 	foreach($varpair as &$record)
 	    $record->order_num = $order;
     }
-    
+
     // make a menu ordering column
     function make_column($category) {
-        //FIXME
-        return $items;
+        return $this->Menu->some('category',$category);
     }
 
     // add an item to an order
