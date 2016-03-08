@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<!DOCTYPE schedule SYSTEM 'schedule.dtd'>
+
+<schedule>
+    <day whichday="M">
+        <slot time="1030">
+            <course>ACIT4650</course>
+            <instructor>Medhat Elmasry</instructor>
+            <room>SE12-306</room>
+        </slot>
+        <slot time="1130">
+            <course>ACIT4650</course>
+            <instructor>Medhat Elmasry</instructor>
+            <room>SE12-306</room>
+        </slot>
+        <slot time="1530">
+            <course>ACIT4910</course>
+            <instructor>Richard Chau</instructor>
+            <room>SW9-206</room>
+        </slot>
+        <slot time="1630">
+            <course>ACIT4650</course>
+            <instructor>Medhat Elmasry</instructor>
+            <room>SE6-205</room>
+        </slot>
+    </day>
+</schedule>
