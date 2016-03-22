@@ -1,67 +1,130 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
-
-<!DOCTYPE schedule SYSTEM 'schedule.dtd'>
-
-<schedule>
-    <day whichday="M">
-        <slot time="1030">
-            <course>ACIT4650</course>
-            <instructor>Medhat Elmasry</instructor>
-            <room>SE12-306</room>
-        </slot>
-        <slot time="1130">
-            <course>ACIT4650</course>
-            <instructor>Medhat Elmasry</instructor>
-            <room>SE12-306</room>
-        </slot>
-        <slot time="1530">
-            <course>ACIT4910</course>
-            <instructor>Richard Chau</instructor>
-            <room>SW9-206</room>
-        </slot>
-        <slot time="1630">
-            <course>ACIT4650</course>
-            <instructor>Medhat Elmasry</instructor>
-            <room>SE6-205</room>
-        </slot>
-    </day>
-    <day whichday="T">
-        <slot time="0830">
-            <course>ACIT4620</course>
+<periods>
+    <period time="0830">
+        <pslot day="T" course="ACIT4620">
+            <type>Lab</type>
             <instructor>Bethany Edmunds</instructor>
             <room>SE12-306</room>
-        </slot>
-        <slot time="1230">
-            <course>ACIT4650</course>
-            <instructor>Medhat Elmasry</instructor>
+        </pslot>
+        <pslot day="F" course="ACIT4660">
+            <type>Lecture</type>
+            <instructor>Steve Fabiszewski</instructor>
             <room>SW9-206</room>
-        </slot>
-        <slot time="1530">
-            <course>ACIT4620</course>
+        </pslot>
+    </period>
+    <period time="0930">
+        <pslot day="T" course="ACIT4620">
+            <type>Lab</type>
             <instructor>Bethany Edmunds</instructor>
-            <room>SW9-206</room>
-        </slot>
-    </day>
-     <day whichday="R">
-        <slot time="0930">
-            <course>ACIT4910</course>
+            <room>SE12-306</room>
+        </pslot>
+        <pslot day="R" course="ACIT4910">
+            <type>Lecture</type>
             <instructor>Richard Chau</instructor>
             <room>SW5-1840</room>
-        </slot>
-        <slot time="1030">
-            <course>ACIT4910</course>
+        </pslot>
+        <pslot day="F" course="ACIT4660">
+            <type>Lecture</type>
+            <instructor>Steve Fabiszewski</instructor>
+            <room>SW9-206</room>
+        </pslot>
+    </period>
+    <period time="1030">
+        <pslot day="M" course="ACIT4650">
+            <type>Lab</type>
+            <instructor>Medhat Elmasry</instructor>
+            <room>SE12-306</room>
+        </pslot>
+        <pslot day="R" course="ACIT4910">
+            <type>Lab</type>
             <instructor>Richard Chau</instructor>
             <room>SE12-306</room>
-        </slot>
-        <slot time="1330">
-            <course>ACIT4850</course>
+        </pslot>
+        <pslot day="F" course="ACIT4770">
+            <type>Tutorial</type>
+            <instructor>Trevor Lord</instructor>
+            <room>SE12-306</room>
+        </pslot>
+    </period>
+    <period time="1130">
+        <pslot day="M" course="ACIT4650">
+            <type>Lab</type>
+            <instructor>Medhat Elmasry</instructor>
+            <room>SE12-306</room>
+        </pslot>
+        <pslot day="R" course="ACIT4910">
+            <type>Lab</type>
+            <instructor>Richard Chau</instructor>
+            <room>SE12-306</room>
+        </pslot>
+        <pslot day="F" course="ACIT4770">
+            <type>Tutorial</type>
+            <instructor>Trevor Lord</instructor>
+            <room>SE12-306</room>
+        </pslot>
+    </period>
+    <period time="1230">
+        <pslot day="T" course="ACIT4650">
+            <type>Lecture</type>
+            <instructor>Medhat Elmasry</instructor>
+            <room>SW9-206</room>
+        </pslot>
+        <pslot day="W" course="ACIT4850">
+            <type>Lecture</type>
+            <instructor>James Parry</instructor>
+            <room>SW3-1750</room>
+        </pslot>
+    </period>
+    <period time="1330">
+        <pslot day="W" course="ACIT4850">
+            <type>Lecture</type>
+            <instructor>James Parry</instructor>
+            <room>SW3-1750</room>
+        </pslot>
+        <pslot day="R" course="ACIT4850">
+            <type>Lab</type>
             <instructor>James Parry</instructor>
             <room>SE12-308</room>
-        </slot>
-    </day>
-</schedule>
+        </pslot>
+        <pslot day="F" course="ACIT4660">
+            <type>Lab</type>
+            <instructor>Steve Fabiszewski</instructor>
+            <room>SE12-306</room>
+        </pslot>
+    </period>
+    <period time="1430">
+        <pslot day="R" course="ACIT4850">
+            <type>Lab</type>
+            <instructor>James Parry</instructor>
+            <room>SE12-308</room>
+        </pslot>
+        <pslot day="F" course="ACIT4660">
+            <type>Lab</type>
+            <instructor>Steve Fabiszewski</instructor>
+            <room>SE12-306</room>
+        </pslot>
+    </period>
+    <period time="1530">
+        <pslot day="M" course="ACIT4910">
+            <type>Lecture</type>
+            <instructor>Richard Chau</instructor>
+            <room>SW9-206</room>
+        </pslot>
+        <pslot day="T" course="ACIT4620">
+            <type>Lecture</type>
+            <instructor>Bethany Edmunds</instructor>
+            <room>SW3-3615</room>
+        </pslot>
+    </period>
+    <period time="1630">
+        <pslot day="M" course="ACIT4650">
+            <type>Lecture</type>
+            <instructor>Medhat Elmasry</instructor>
+            <room>SE6-205</room>
+        </pslot>
+        <pslot day="T" course="ACIT4620">
+            <type>Lecture</type>
+            <instructor>Bethany Edmunds</instructor>
+            <room>SW3-3615</room>
+        </pslot>
+    </period>
+</periods>

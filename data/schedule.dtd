@@ -2,11 +2,10 @@
 
 <!ELEMENT timetable (days,periods,courses)>
 
-<!-- Timetable by day  -->
+<!-- Timetable by day                               -->
 <!ELEMENT days (day+)>
 <!-- a day has slots-->
 <!ELEMENT day (slot+)>
-
 
 <!-- Slots include course, instructor, room-->
 <!ELEMENT slot (course, instructor,room)>
@@ -24,4 +23,18 @@
 <!-- different possible times for the classes -->
 <!ATTLIST slot
     time (0830|0930|1030|1130|1230|1330|1430|1530|1630) #REQUIRED
+  >
+
+<!-- Timetable by period ..................................................... -->
+<!ELEMENT periods (period+)>
+
+<!ELEMENT period (pslot+)>
+<!ATTLIST period
+    time (0830|0930|1030|1130|1230|1330|1430|1530|1630) #REQUIRED
+  >
+
+<!ELEMENT pslot (type,instructor,room)>
+<!ATTLIST pslot
+    day (M|T|W|R|F) #REQUIRED
+    course (ACIT4620|ACIT4650|ACIT4660|ACIT4770|ACIT4850|ACIT4910) #REQUIRED
   >
