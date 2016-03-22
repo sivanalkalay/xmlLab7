@@ -1,80 +1,102 @@
 <courses>
-    <course whichcourse="ACIT4620" whichinstructor="Bethany Edmunds">
+    <scourse whichcourse="ACIT4620">
         <cslot whichday="T" time="0830">
+            <instructor>Bethany Edmunds</instructor>
             <room>SE12-306</room>
         </cslot>
         <cslot whichday="T" time="0930">
+            <instructor>Bethany Edmunds</instructor>
             <room>SE12-306</room>
         </cslot>
         <cslot whichday="T" time="1530">
+            <instructor>Bethany Edmunds</instructor>
             <room>SW3-3615</room>
         </cslot>
         <cslot whichday="T" time="1630">
+            <instructor>Bethany Edmunds</instructor>
             <room>SW3-3615</room>
         </cslot>
-    </course>
-    <course whichcourse="ACIT4650" whichinstructor="Medhat Elmasry">
+    </scourse>
+    <scourse whichcourse="ACIT4650">
         <cslot whichday="M" time="1030">
+            <instructor>Medhat Elmasry</instructor>
             <room>SE12-306</room>
         </cslot>
         <cslot whichday="M" time="1130">
+            <instructor>Medhat Elmasry</instructor>
             <room>SE12-306</room>
         </cslot>
         <cslot whichday="M" time="1630">
+            <instructor>Medhat Elmasry</instructor>
             <room>SE6-205</room>
         </cslot>
         <cslot whichday="T" time="1230">
+            <instructor>Medhat Elmasry</instructor>
             <room>SW9-206</room>
         </cslot>
-    </course>
-    <course whichcourse="ACIT4660" whichinstructor="Steve Fabiszewski">
+    </scourse>
+    <scourse whichcourse="ACIT4660">
         <cslot whichday="F" time="0830">
+            <instructor>Steve Fabiszewski</instructor>
             <room>SW9-206</room>
         </cslot>
         <cslot whichday="F" time="0930">
+            <instructor>Steve Fabiszewski</instructor>
             <room>SW9-206</room>
         </cslot>
         <cslot whichday="F" time="1330">
+            <instructor>Steve Fabiszewski</instructor>
             <room>SE12-306</room>
         </cslot>
         <cslot whichday="F" time="1430">
+            <instructor>Steve Fabiszewski</instructor>
             <room>SE12-306</room>
         </cslot>
-    </course>
-    <course whichcourse="ACIT4770" whichinstructor="Trevor Lord">
+    </scourse>
+    <scourse whichcourse="ACIT4770">
         <cslot whichday="F" time="1030">
+            <instructor>Trevor Lord</instructor>
             <room>SE12-306</room>
         </cslot>
         <cslot whichday="F" time="1130">
+            <instructor>Trevor Lord</instructor>
             <room>SE12-306</room>
         </cslot>
-    </course>
-    <course whichcourse="ACIT4850" whichinstructor="James Parry">
+    </scourse>
+    <scourse whichcourse="ACIT4850">
         <cslot whichday="W" time="1230">
+            <instructor>James Parry</instructor>
             <room>SW3-1750</room>
         </cslot>
         <cslot whichday="W" time="1330">
+            <instructor>James Parry</instructor>
             <room>SW3-1750</room>
         </cslot>
         <cslot whichday="R" time="1330">
+            <instructor>James Parry</instructor>
             <room>SE12-308</room>
         </cslot>
         <cslot whichday="R" time="1430">
+            <instructor>James Parry</instructor>
             <room>SE12-308</room>
         </cslot>
-    </course>
-    <course whichcourse="ACIT4910" whichinstructor="Richard Chau">
+    </scourse>
+    <scourse whichcourse="ACIT4910">
         <cslot whichday="M" time="1530">
+            <instructor>Richard Chau</instructor>
             <room>SW9-206</room>
         </cslot>
         <cslot whichday="R" time="0930">
+            <instructor>Richard Chau</instructor>
             <room>SW5-1840</room>
         </cslot>
         <cslot whichday="R" time="1030">
+            <instructor>Richard Chau</instructor>
             <room>SE12-306</room>
         </cslot>
         <cslot whichday="R" time="1130">
+            <instructor>Richard Chau</instructor>
             <room>SE12-306</room>
         </cslot>
-    </course>
+    </scourse>
 </courses>

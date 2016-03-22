@@ -40,11 +40,10 @@
   >
 
 <!-- Timetable by course  -->
-<!ELEMENT courses (course+)>
-<!ELEMENT course (cslot+)>
-<!ATTLIST course
+<!ELEMENT courses (scourse+)>
+<!ELEMENT scourse (cslot+)>
+<!ATTLIST scourse
     whichcourse (ACIT4620|ACIT4650|ACIT4660|ACIT4770|ACIT4850|ACIT4910) #REQUIRED
-    whichinstructor(Bethany Edmunds|Medhat Elmasry|Richard Chau|James Parry|Trevor Lord|Steve Fabiszewski)
   >
 <!ELEMENT cslot (instructor,room)>
 <!ATTLIST cslot
