@@ -5,7 +5,7 @@ To change this template file, choose Tools | Templates
 and open the template in the editor.
 -->
 
-<!DOCTYPE schedule SYSTEM 'schedule.dtd'
+<!DOCTYPE timetable SYSTEM 'schedule.dtd'
     [
     <!ENTITY days SYSTEM "days.xml">
     <!ENTITY periods SYSTEM "periods.xml">
