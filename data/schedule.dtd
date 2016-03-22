@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- a schedule has days-->
-<!ELEMENT schedule (day+)>
+
+<!ELEMENT timetable (days,periods,courses)>
+
+<!-- Timetable by day  -->
+<!ELEMENT days (day+)>
 <!-- a day has slots-->
 <!ELEMENT day (slot+)>
 
 
 <!-- Slots include course, instructor, room-->
 <!ELEMENT slot (course, instructor,room)>
-
-
 <!--enter in instructor-->
 <!ELEMENT instructor (#PCDATA)>
 <!--enter in room #-->
 <!ELEMENT room (#PCDATA)>
 <!--enter in course #-->
 <!ELEMENT course (#PCDATA)>
-
 
 <!-- the different days in a week -->
 <!ATTLIST day

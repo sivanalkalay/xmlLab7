@@ -5,63 +5,15 @@ To change this template file, choose Tools | Templates
 and open the template in the editor.
 -->
 
-<!DOCTYPE schedule SYSTEM 'schedule.dtd'>
+<!DOCTYPE schedule SYSTEM 'schedule.dtd'
+    [
+    <!ENTITY days SYSTEM "days.xml">
+    <!ENTITY periods SYSTEM "periods.xml">
+    <!ENTITY courses SYSTEM "courses.xml">
+]>
 
-<schedule>
-    <day whichday="M">
-        <slot time="1030">
-            <course>ACIT4650</course>
-            <instructor>Medhat Elmasry</instructor>
-            <room>SE12-306</room>
-        </slot>
-        <slot time="1130">
-            <course>ACIT4650</course>
-            <instructor>Medhat Elmasry</instructor>
-            <room>SE12-306</room>
-        </slot>
-        <slot time="1530">
-            <course>ACIT4910</course>
-            <instructor>Richard Chau</instructor>
-            <room>SW9-206</room>
-        </slot>
-        <slot time="1630">
-            <course>ACIT4650</course>
-            <instructor>Medhat Elmasry</instructor>
-            <room>SE6-205</room>
-        </slot>
-    </day>
-    <day whichday="T">
-        <slot time="0830">
-            <course>ACIT4620</course>
-            <instructor>Bethany Edmunds</instructor>
-            <room>SE12-306</room>
-        </slot>
-        <slot time="1230">
-            <course>ACIT4650</course>
-            <instructor>Medhat Elmasry</instructor>
-            <room>SW9-206</room>
-        </slot>
-        <slot time="1530">
-            <course>ACIT4620</course>
-            <instructor>Bethany Edmunds</instructor>
-            <room>SW9-206</room>
-        </slot>
-    </day>
-     <day whichday="R">
-        <slot time="0930">
-            <course>ACIT4910</course>
-            <instructor>Richard Chau</instructor>
-            <room>SW5-1840</room>
-        </slot>
-        <slot time="1030">
-            <course>ACIT4910</course>
-            <instructor>Richard Chau</instructor>
-            <room>SE12-306</room>
-        </slot>
-        <slot time="1330">
-            <course>ACIT4850</course>
-            <instructor>James Parry</instructor>
-            <room>SE12-308</room>
-        </slot>
-    </day>
-</schedule>
+<timetable>
+    &days;
+    &periods;
+    &courses;
+</timetable>
