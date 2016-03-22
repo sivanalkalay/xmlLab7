@@ -25,7 +25,7 @@
     time (0830|0930|1030|1130|1230|1330|1430|1530|1630) #REQUIRED
   >
 
-<!-- Timetable by period ..................................................... -->
+<!-- Timetable by period  -->
 <!ELEMENT periods (period+)>
 
 <!ELEMENT period (pslot+)>
@@ -33,8 +33,21 @@
     time (0830|0930|1030|1130|1230|1330|1430|1530|1630) #REQUIRED
   >
 
-<!ELEMENT pslot (type,instructor,room)>
+<!ELEMENT pslot (instructor,room)>
 <!ATTLIST pslot
-    day (M|T|W|R|F) #REQUIRED
+    whichday (M|T|W|R|F) #REQUIRED
     course (ACIT4620|ACIT4650|ACIT4660|ACIT4770|ACIT4850|ACIT4910) #REQUIRED
+  >
+
+<!-- Timetable by course  -->
+<!ELEMENT courses (course+)>
+<!ELEMENT course (cslot+)>
+<!ATTLIST course
+    whichcourse (ACIT4620|ACIT4650|ACIT4660|ACIT4770|ACIT4850|ACIT4910) #REQUIRED
+    whichinstructor(Bethany Edmunds|Medhat Elmasry|Richard Chau|James Parry|Trevor Lord|Steve Fabiszewski)
+  >
+<!ELEMENT cslot (instructor,room)>
+<!ATTLIST cslot
+    whichday (M|T|W|R|F) #REQUIRED
+    time (0830|0930|1030|1130|1230|1330|1430|1530|1630) #REQUIRED
   >

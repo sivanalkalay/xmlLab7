@@ -1,67 +1,80 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
-
-<!DOCTYPE schedule SYSTEM 'schedule.dtd'>
-
-<schedule>
-    <day whichday="M">
-        <slot time="1030">
-            <course>ACIT4650</course>
-            <instructor>Medhat Elmasry</instructor>
+<courses>
+    <course whichcourse="ACIT4620" whichinstructor="Bethany Edmunds">
+        <cslot whichday="T" time="0830">
             <room>SE12-306</room>
-        </slot>
-        <slot time="1130">
-            <course>ACIT4650</course>
-            <instructor>Medhat Elmasry</instructor>
+        </cslot>
+        <cslot whichday="T" time="0930">
             <room>SE12-306</room>
-        </slot>
-        <slot time="1530">
-            <course>ACIT4910</course>
-            <instructor>Richard Chau</instructor>
-            <room>SW9-206</room>
-        </slot>
-        <slot time="1630">
-            <course>ACIT4650</course>
-            <instructor>Medhat Elmasry</instructor>
+        </cslot>
+        <cslot whichday="T" time="1530">
+            <room>SW3-3615</room>
+        </cslot>
+        <cslot whichday="T" time="1630">
+            <room>SW3-3615</room>
+        </cslot>
+    </course>
+    <course whichcourse="ACIT4650" whichinstructor="Medhat Elmasry">
+        <cslot whichday="M" time="1030">
+            <room>SE12-306</room>
+        </cslot>
+        <cslot whichday="M" time="1130">
+            <room>SE12-306</room>
+        </cslot>
+        <cslot whichday="M" time="1630">
             <room>SE6-205</room>
-        </slot>
-    </day>
-    <day whichday="T">
-        <slot time="0830">
-            <course>ACIT4620</course>
-            <instructor>Bethany Edmunds</instructor>
-            <room>SE12-306</room>
-        </slot>
-        <slot time="1230">
-            <course>ACIT4650</course>
-            <instructor>Medhat Elmasry</instructor>
+        </cslot>
+        <cslot whichday="T" time="1230">
             <room>SW9-206</room>
-        </slot>
-        <slot time="1530">
-            <course>ACIT4620</course>
-            <instructor>Bethany Edmunds</instructor>
+        </cslot>
+    </course>
+    <course whichcourse="ACIT4660" whichinstructor="Steve Fabiszewski">
+        <cslot whichday="F" time="0830">
             <room>SW9-206</room>
-        </slot>
-    </day>
-     <day whichday="R">
-        <slot time="0930">
-            <course>ACIT4910</course>
-            <instructor>Richard Chau</instructor>
-            <room>SW5-1840</room>
-        </slot>
-        <slot time="1030">
-            <course>ACIT4910</course>
-            <instructor>Richard Chau</instructor>
+        </cslot>
+        <cslot whichday="F" time="0930">
+            <room>SW9-206</room>
+        </cslot>
+        <cslot whichday="F" time="1330">
             <room>SE12-306</room>
-        </slot>
-        <slot time="1330">
-            <course>ACIT4850</course>
-            <instructor>James Parry</instructor>
+        </cslot>
+        <cslot whichday="F" time="1430">
+            <room>SE12-306</room>
+        </cslot>
+    </course>
+    <course whichcourse="ACIT4770" whichinstructor="Trevor Lord">
+        <cslot whichday="F" time="1030">
+            <room>SE12-306</room>
+        </cslot>
+        <cslot whichday="F" time="1130">
+            <room>SE12-306</room>
+        </cslot>
+    </course>
+    <course whichcourse="ACIT4850" whichinstructor="James Parry">
+        <cslot whichday="W" time="1230">
+            <room>SW3-1750</room>
+        </cslot>
+        <cslot whichday="W" time="1330">
+            <room>SW3-1750</room>
+        </cslot>
+        <cslot whichday="R" time="1330">
             <room>SE12-308</room>
-        </slot>
-    </day>
-</schedule>
+        </cslot>
+        <cslot whichday="R" time="1430">
+            <room>SE12-308</room>
+        </cslot>
+    </course>
+    <course whichcourse="ACIT4910" whichinstructor="Richard Chau">
+        <cslot whichday="M" time="1530">
+            <room>SW9-206</room>
+        </cslot>
+        <cslot whichday="R" time="0930">
+            <room>SW5-1840</room>
+        </cslot>
+        <cslot whichday="R" time="1030">
+            <room>SE12-306</room>
+        </cslot>
+        <cslot whichday="R" time="1130">
+            <room>SE12-306</room>
+        </cslot>
+    </course>
+</courses>
