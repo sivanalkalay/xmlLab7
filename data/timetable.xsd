@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<xs:schema version="1.0"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           elementFormDefault="qualified">
+
+    
+    <!-- Day simple type -->
+    <xs:simpleType name="daySimpleType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="M"/>
+            <xs:enumeration value="T"/>
+            <xs:enumeration value="W"/>
+            <xs:enumeration value="R"/>
+            <xs:enumeration value="F"/>
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <!-- Time/period simple type -->
+    <xs:simpleType name="timeSimpleType">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[012][0-9][0-5][0-9]"/>
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <!-- Course simple type -->
+    <xs:simpleType name="courseSimpleType">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="ACIT[0-9]{4}"/>
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <!-- Days structure -->
+    <xs:complexType name="daysComplexType">
+        <xs:sequence>
+            <xs:element name="day" type="dayComplex" maxOccurs="5"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:complexType name="dayComplex">
+        <xs:sequence>
+            <xs:element name="time" type="timeComplex" maxOccurs="9"/>
+        </xs:sequence>
+        <xs:attribute name="whichday" type="daySimpleType"/>
+    </xs:complexType>
+    
+    
