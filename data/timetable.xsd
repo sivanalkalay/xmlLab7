@@ -49,4 +49,41 @@ and open the template in the editor.
         <xs:attribute name="whichday" type="daySimpleType"/>
     </xs:complexType>
     
+    <xs:complexType name="timeComplex">
+        <xs:sequence>
+            <xs:element name="course" type="xs:string"/>
+        </xs:sequence>
+        <xs:attribute name="whichcourse" type="courseSimpleType"/>
+    </xs:complexType>
+
     
+    <!-- Time structure -->
+    <xs:complexType name="timeComplexType">
+        <xs:sequence>
+            <xs:element name="time" type="timeCom" maxOccurs="9"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:complexType name="timeDayComplexType">
+        <xs:sequence>
+            <xs:element name="timeDay" type="timeDayComplex" maxOccurs="5"/>
+        </xs:sequence>
+        <xs:attribute name="which" type="periodCodeType"/>
+    </xs:complexType>
+
+    
+    <xs:complexType name="timeCourseComplexType">
+        <xs:sequence>
+            <xs:element name="course" type="xs:string"/>
+        </xs:sequence>
+        <xs:attribute name="whichcourse" type="courseSimpleType"/>
+    </xs:complexType>
+    
+    <!-- Course structre -->
+    <xs:complexType name="courseComplexType">
+        <xs:sequence>
+            <xs:element name="course" type="courseComplex"/>
+        </xs:sequence>
+    </xs:complexType>
+        
+</xs:schema>
